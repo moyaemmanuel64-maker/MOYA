@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-st.title("📦 Stock Card Management System")
+st.title("📦 MANZY MAMUNA WA GLORY")
 
 if "data" not in st.session_state:
     st.session_state.data = pd.DataFrame(
