@@ -5,7 +5,7 @@ from datetime import datetime, date
 
 st.set_page_config(page_title="PHARMOYA", layout="wide")
 
-st.title("💊 PHARMOYA - Pharmacy Management System")
+st.title("💊 PHARMOYA")
 
 # ==============================
 # SESSION STATE INITIALIZATION
@@ -172,7 +172,7 @@ elif menu == "Expense Tracker":
 
 elif menu == "Stock Card":
 
-    st.header("📦 Pharmacy Stock Card")
+    st.header("📦 Stock Card")
 
     medicine = st.text_input("Medicine Name")
     batch = st.text_input("Batch Number")
@@ -180,7 +180,7 @@ elif menu == "Stock Card":
 
     transaction_type = st.selectbox(
         "Transaction Type",
-        ["Received", "Issued"]
+        ["Received", "Issued","Losses"]
     )
 
     quantity = st.number_input("Quantity", min_value=1)
@@ -413,3 +413,6 @@ elif menu == "Reports":
         "sales_report.csv",
         "text/csv",
     )
+    ## Deploy online
+    Use streamlit Cloud:
+    https://share.streamlit.io
