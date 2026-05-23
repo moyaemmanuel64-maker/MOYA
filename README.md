@@ -4,7 +4,7 @@ from datetime import datetime, date
 
 st.set_page_config(page_title="PHARMOYA", layout="wide")
 
-st.title("💊 PHARMOYA - Pharmacy Management System")
+st.title("💊 PHARMOYA")
 
 # ==============================
 # SESSION STATE INITIALIZATION
