@@ -18,6 +18,7 @@ if "stock_data" not in st.session_state:
             "Expiry",
             "Received",
             "Issued",
+            "Losses",
             "Balance",
         ]
     )
@@ -81,7 +82,7 @@ menu = st.sidebar.selectbox(
 
 if menu == "Dashboard":
 
-    st.header("📊 Dashboard")
+    st.header("Dashboard")
 
     total_medicines = len(st.session_state.stock_data)
 
@@ -177,7 +178,7 @@ elif menu == "Expense Tracker":
 
 elif menu == "Stock Card":
 
-    st.header("📦 Pharmacy Stock Card")
+    st.header("📦Stock Card")
 
     with st.form("stock_form"):
         medicine = st.text_input("Medicine Name", placeholder="Enter medicine name")
@@ -271,7 +272,7 @@ elif menu == "Stock Card":
 
 elif menu == "Medicine Database":
 
-    st.header("💊 Medicine Information Database")
+    st.header("💊 Medicine Information")
 
     with st.form("medicine_form"):
         generic = st.text_input("Generic Name", placeholder="Enter generic name")
